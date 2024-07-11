@@ -1,7 +1,8 @@
 
 # Intune IOS Application
 ## Segue Application 
-#### This application displays an example of creating a new view controller and passing data between them leveraging Segue as defined it's a transition between two view controllers in your app’s storyboard file.
+#### This application displays an example of creating a new view controller and passing data between them leveraging Segue.<br>
+As defined Segue is a transition between two view controllers in your app’s storyboard file.
 
 <br>
 Ref:
