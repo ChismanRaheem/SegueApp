@@ -12,11 +12,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mylabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //LifeCycle note that ViewDidLoad will only be called on launch.
+        // more info https://vikramios.medium.com/swift-view-controller-lifecycle-86cae3270064
+        
+        print("viewDidLoad function called")
     }
-
+    
+    override func viewDidDisappear(_ animated: Bool) {
+    print ("viewDidDisappear function called")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+    print ("viewWillDisappear function called")
+    }
+    override func viewWillAppear(_ animated: Bool) {
+            print ("viewWillAppear function called")
+        nameTextField.text = " "
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        print ("viewDidAppear function called")
+    }
     
     @IBAction func nextButton(_ sender: UIButton) {
         userName = nameTextField.text!
